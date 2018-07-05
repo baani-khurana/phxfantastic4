@@ -96,7 +96,7 @@ function doWork(obj) {
 	}
 	console.log(toSend);
 	$.post("receiver", JSON.stringify(toSend), function(res){
-		console.log(res);
+		document.getElementById("output").value = res.body
 	});
 	// stop link reloading the page
  event.preventDefault();
