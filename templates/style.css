@@ -1,0 +1,30 @@
+body {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(background-img1.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+    width: auto;
+}
+
+img {
+    height: 40px;
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.5);
+    margin-left: 47%;
+}
+
+.container {
+    margin-top: 5%;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+}
+
+.btn:hover {
+    background-color: grey;
+    border: none;
+}
