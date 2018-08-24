@@ -108,7 +108,7 @@ def get_prediction(sentence):
         pred_nature = predict_from_sentence(model_nature, sentence)
     #keras.backend.clear_session()
     #idx_nature = np.argmax(pred_nature)
-    idx_nature = 0
+    idx_nature = np.argmax(pred_nature) 
     
     line1 = "\nPrediction: \n\tBody:   {}\n\tNature: {}".format(pd.get_dummies(y_body_dirty).columns[idx_body], pd.get_dummies(y_nature_dirty).columns[idx_nature])
     if (test_idx != -1):
